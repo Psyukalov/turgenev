@@ -36,6 +36,7 @@
                 <outlet property="distanceValueLabel" destination="xCt-VN-OeU" id="H3l-6d-Q3w"/>
                 <outlet property="gradientImageView" destination="udX-HO-PXz" id="NNH-Hw-Lpn"/>
                 <outlet property="imageView" destination="Idi-VD-zNT" id="JRL-nT-WWe"/>
+                <outlet property="infoLabel" destination="F1i-l9-w70" id="qEe-Jq-Ta2"/>
                 <outlet property="mainTextLabel" destination="sgA-6N-Oja" id="79O-3b-SPQ"/>
                 <outlet property="nameLabel" destination="JNY-tS-GgX" id="dJa-EE-VVS"/>
                 <outlet property="pageControl" destination="prA-fY-UMZ" id="OSK-qf-aTE"/>
@@ -44,7 +45,6 @@
                 <outlet property="ratingValueLabel" destination="vqk-to-ZFj" id="0uk-hK-ePl"/>
                 <outlet property="routeButton" destination="ltw-QV-yGC" id="Xau-e2-mnf"/>
                 <outlet property="scrollView" destination="kGm-VZ-qrj" id="fCQ-eT-MrV"/>
-                <outlet property="titleLabel" destination="F1i-l9-w70" id="M8h-MI-5zM"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -106,7 +106,7 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="udX-HO-PXz">
                                     <rect key="frame" x="0.0" y="491.5" width="375" height="216"/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1i-l9-w70">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1i-l9-w70">
                                     <rect key="frame" x="16" y="521.5" width="343" height="42"/>
                                     <fontDescription key="fontDescription" name="BN-Book" family="BN" pointSize="36"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -179,6 +179,9 @@
                                     <fontDescription key="fontDescription" name="BN-Regular" family="BN" pointSize="20"/>
                                     <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="route"/>
+                                    <connections>
+                                        <action selector="routeButton_TUI:" destination="-1" eventType="touchUpInside" id="OIj-5e-ywm"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boQ-xA-bhy">
                                     <rect key="frame" x="16" y="799.5" width="343" height="48"/>
@@ -189,6 +192,9 @@
                                     <fontDescription key="fontDescription" name="BN-Regular" family="BN" pointSize="20"/>
                                     <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="comments"/>
+                                    <connections>
+                                        <action selector="commentsButton_TUI:" destination="-1" eventType="touchUpInside" id="aZ3-KF-ErI"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

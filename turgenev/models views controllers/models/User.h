@@ -21,8 +21,6 @@
 
 @property (strong, nonatomic) NSString *imageURL;
 
-+ (instancetype)shared __attribute__((unavailable("This protocol method is not implemented.")));
-
 - (void)synchronize __attribute__((unavailable("This protocol method is not implemented.")));
 
 @end

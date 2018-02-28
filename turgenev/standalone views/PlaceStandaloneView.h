@@ -12,6 +12,28 @@
 #import "PlacesManager.h"
 
 
+typedef NS_ENUM(NSUInteger, PlaceStandaloneViewAction) {
+    PlaceStandaloneViewActionRoute = 0,
+    PlaceStandaloneViewActionComment
+};
+
+
+@class PlaceStandaloneView;
+
+
+@protocol PlaceStandaloneViewDelegate <NSObject>
+
+@optional
+
+- (void)placeStandaloneView:(PlaceStandaloneView *)placeStandaloneView didSelectAction:(PlaceStandaloneViewAction)action;
+
+@end
+
+
 @interface PlaceStandaloneView : StandaloneView <StandaloneViewProtocol>
+
+@property (weak, nonatomic) id<PlaceStandaloneViewDelegate> delegate;
+
+@property (strong, nonatomic) Place *place;
 
 @end

@@ -20,6 +20,15 @@
 
 @implementation User
 
++ (instancetype)shared {
+    static id instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self class] new];
+    });
+    return instance;
+}
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {

@@ -39,6 +39,7 @@
 		C77537932033050200C92EDB /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77537912033050200C92EDB /* ImageCollectionViewCell.xib */; };
 		C77537962033053800C92EDB /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = C77537952033053700C92EDB /* UIView+Custom.m */; };
 		C77537992033089D00C92EDB /* UIImageView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = C77537982033089D00C92EDB /* UIImageView+Custom.m */; };
+		C786C6E12043F50600148444 /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C786C6E02043F50600148444 /* AuthorizationViewController.m */; };
 		C78C4EB52032E810007F986E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C4EB42032E810007F986E /* ViewController.m */; };
 		C78C4EB82032ECD3007F986E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C4EB72032ECD3007F986E /* MapViewController.m */; };
 		C78C4EC02032EE88007F986E /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C4EBF2032EE88007F986E /* MapView.m */; };
@@ -52,6 +53,16 @@
 		C7F13886203EDFCE00058DC3 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7F13885203EDFCE00058DC3 /* MapView.xib */; };
 		C7F13889203EE6DE00058DC3 /* rating_oval_i@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7F13887203EE6DE00058DC3 /* rating_oval_i@2x.png */; };
 		C7F1388A203EE6DE00058DC3 /* rating_oval_i@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7F13888203EE6DE00058DC3 /* rating_oval_i@3x.png */; };
+		C7F1388F203EF34800058DC3 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F1388D203EF34800058DC3 /* CommentsViewController.m */; };
+		C7F13895203EF46D00058DC3 /* CommentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7F13894203EF46D00058DC3 /* CommentsView.xib */; };
+		C7F13898203EF5C300058DC3 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F13896203EF5C200058DC3 /* NavigationController.m */; };
+		C7F1389B203EF6A600058DC3 /* TNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F1389A203EF6A600058DC3 /* TNavigationController.m */; };
+		C7F138A0203EFCA600058DC3 /* TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F1389E203EFCA600058DC3 /* TViewController.m */; };
+		C7F138A1203EFCA600058DC3 /* TViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7F1389F203EFCA600058DC3 /* TViewController.xib */; };
+		C7F138A4203EFE2D00058DC3 /* back_b@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7F138A2203EFE2C00058DC3 /* back_b@3x.png */; };
+		C7F138A5203EFE2D00058DC3 /* back_b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7F138A3203EFE2D00058DC3 /* back_b@2x.png */; };
+		C7F138AC203F120F00058DC3 /* delete_b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7F138AA203F120E00058DC3 /* delete_b@2x.png */; };
+		C7F138AD203F120F00058DC3 /* delete_b@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7F138AB203F120F00058DC3 /* delete_b@3x.png */; };
 		C7F9D6B6202DB0A700AC6CE0 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F9D6B5202DB0A700AC6CE0 /* Comment.m */; };
 		C7F9D6BC202DC07900AC6CE0 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F9D6BB202DC07900AC6CE0 /* News.m */; };
 		C7F9D6C2202DC0CA00AC6CE0 /* History.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F9D6C1202DC0CA00AC6CE0 /* History.m */; };
@@ -162,6 +173,8 @@
 		C77537972033089D00C92EDB /* UIImageView+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Custom.h"; sourceTree = "<group>"; };
 		C77537982033089D00C92EDB /* UIImageView+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Custom.m"; sourceTree = "<group>"; };
 		C775379A20331F0B00C92EDB /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		C786C6DF2043F50600148444 /* AuthorizationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationViewController.h; sourceTree = "<group>"; };
+		C786C6E02043F50600148444 /* AuthorizationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorizationViewController.m; sourceTree = "<group>"; };
 		C78C4EB32032E810007F986E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C78C4EB42032E810007F986E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C78C4EB62032ECD3007F986E /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -185,6 +198,20 @@
 		C7F13885203EDFCE00058DC3 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		C7F13887203EE6DE00058DC3 /* rating_oval_i@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rating_oval_i@2x.png"; sourceTree = "<group>"; };
 		C7F13888203EE6DE00058DC3 /* rating_oval_i@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rating_oval_i@3x.png"; sourceTree = "<group>"; };
+		C7F1388D203EF34800058DC3 /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
+		C7F1388E203EF34800058DC3 /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
+		C7F13894203EF46D00058DC3 /* CommentsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentsView.xib; sourceTree = "<group>"; };
+		C7F13896203EF5C200058DC3 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		C7F13897203EF5C200058DC3 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		C7F13899203EF6A600058DC3 /* TNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNavigationController.h; sourceTree = "<group>"; };
+		C7F1389A203EF6A600058DC3 /* TNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNavigationController.m; sourceTree = "<group>"; };
+		C7F1389D203EFCA600058DC3 /* TViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewController.h; sourceTree = "<group>"; };
+		C7F1389E203EFCA600058DC3 /* TViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewController.m; sourceTree = "<group>"; };
+		C7F1389F203EFCA600058DC3 /* TViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TViewController.xib; sourceTree = "<group>"; };
+		C7F138A2203EFE2C00058DC3 /* back_b@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_b@3x.png"; sourceTree = "<group>"; };
+		C7F138A3203EFE2D00058DC3 /* back_b@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_b@2x.png"; sourceTree = "<group>"; };
+		C7F138AA203F120E00058DC3 /* delete_b@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete_b@2x.png"; sourceTree = "<group>"; };
+		C7F138AB203F120F00058DC3 /* delete_b@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete_b@3x.png"; sourceTree = "<group>"; };
 		C7F9D6B4202DB0A700AC6CE0 /* Comment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
 		C7F9D6B5202DB0A700AC6CE0 /* Comment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		C7F9D6BA202DC07900AC6CE0 /* News.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
@@ -336,6 +363,7 @@
 			children = (
 				C7572B9B2029FCEB00C87CCB /* controllers */,
 				C7572B9C2029FCEB00C87CCB /* models */,
+				C7F1389C203EFCA600058DC3 /* project subclasses */,
 				C7572B9D2029FCEB00C87CCB /* views */,
 			);
 			path = "models views controllers";
@@ -344,6 +372,10 @@
 		C7572B9B2029FCEB00C87CCB /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C786C6DF2043F50600148444 /* AuthorizationViewController.h */,
+				C786C6E02043F50600148444 /* AuthorizationViewController.m */,
+				C7F1388E203EF34800058DC3 /* CommentsViewController.h */,
+				C7F1388D203EF34800058DC3 /* CommentsViewController.m */,
 				C78C4EB62032ECD3007F986E /* MapViewController.h */,
 				C78C4EB72032ECD3007F986E /* MapViewController.m */,
 			);
@@ -386,6 +418,7 @@
 		C7572B9D2029FCEB00C87CCB /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C7F13894203EF46D00058DC3 /* CommentsView.xib */,
 				C7F13885203EDFCE00058DC3 /* MapView.xib */,
 			);
 			path = views;
@@ -454,6 +487,18 @@
 			children = (
 				C7F13882203EDDFC00058DC3 /* TCollectionView.h */,
 				C7F13883203EDDFC00058DC3 /* TCollectionView.m */,
+				C7F13899203EF6A600058DC3 /* TNavigationController.h */,
+				C7F1389A203EF6A600058DC3 /* TNavigationController.m */,
+			);
+			path = "project subclasses";
+			sourceTree = "<group>";
+		};
+		C7F1389C203EFCA600058DC3 /* project subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				C7F1389D203EFCA600058DC3 /* TViewController.h */,
+				C7F1389E203EFCA600058DC3 /* TViewController.m */,
+				C7F1389F203EFCA600058DC3 /* TViewController.xib */,
 			);
 			path = "project subclasses";
 			sourceTree = "<group>";
@@ -490,6 +535,8 @@
 		C7F9D6C5202DC40B00AC6CE0 /* subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				C7F13897203EF5C200058DC3 /* NavigationController.h */,
+				C7F13896203EF5C200058DC3 /* NavigationController.m */,
 				C7FA0F69203B276300570271 /* Annotation.h */,
 				C7FA0F6A203B276300570271 /* Annotation.m */,
 				C78C4ECD2032FF33007F986E /* CollectionView.h */,
@@ -573,8 +620,8 @@
 		C7FA0F1E203AF9E200570271 /* buttons */ = {
 			isa = PBXGroup;
 			children = (
-				C75A9B5E203DBD3F00DEF38F /* send_b@2x.png */,
-				C75A9B5F203DBD3F00DEF38F /* send_b@3x.png */,
+				C7F138A3203EFE2D00058DC3 /* back_b@2x.png */,
+				C7F138A2203EFE2C00058DC3 /* back_b@3x.png */,
 				C7FA0F1F203AF9E200570271 /* close_b@2x.png */,
 				C7FA0F20203AF9E200570271 /* close_b@3x.png */,
 				C75A9B4A203D75ED00DEF38F /* like_b_default@2x.png */,
@@ -585,8 +632,12 @@
 				C7FA0F22203AF9E200570271 /* menu_b@3x.png */,
 				C7FA0F23203AF9E200570271 /* places_list_b@2x.png */,
 				C7FA0F24203AF9E200570271 /* places_list_b@3x.png */,
+				C7F138AA203F120E00058DC3 /* delete_b@2x.png */,
+				C7F138AB203F120F00058DC3 /* delete_b@3x.png */,
 				C7FA0F25203AF9E200570271 /* profile_b@2x.png */,
 				C7FA0F26203AF9E200570271 /* profile_b@3x.png */,
+				C75A9B5E203DBD3F00DEF38F /* send_b@2x.png */,
+				C75A9B5F203DBD3F00DEF38F /* send_b@3x.png */,
 			);
 			path = buttons;
 			sourceTree = "<group>";
@@ -687,6 +738,7 @@
 				C7FA0EB7203AED2B00570271 /* InfoCollectionViewCell.xib in Resources */,
 				C7FA0F0C203AEF5900570271 /* Montserrat-Black.ttf in Resources */,
 				C7FA0F2B203AF9E300570271 /* places_list_b@2x.png in Resources */,
+				C7F138AC203F120F00058DC3 /* delete_b@2x.png in Resources */,
 				C742163C203C39D700A0E4AD /* distance_oval_i@3x.png in Resources */,
 				C7FA0F0A203AEF5900570271 /* BN-Regular.ttf in Resources */,
 				C7FA0F28203AF9E300570271 /* close_b@3x.png in Resources */,
@@ -702,12 +754,15 @@
 				C7F13889203EE6DE00058DC3 /* rating_oval_i@2x.png in Resources */,
 				C7FA0F3E203B04D000570271 /* gradient_0_i@3x.png in Resources */,
 				C7FA0F2D203AF9E300570271 /* profile_b@2x.png in Resources */,
+				C7F138A4203EFE2D00058DC3 /* back_b@3x.png in Resources */,
 				C7FA0F10203AEF5900570271 /* Montserrat-ExtraBold.ttf in Resources */,
 				C7FA0F0B203AEF5900570271 /* BN-Thin.ttf in Resources */,
 				C7FA0F43203B04D000570271 /* gradient_2_i@3x.png in Resources */,
 				C7FA0F09203AEF5900570271 /* BN-Light.ttf in Resources */,
+				C7F13895203EF46D00058DC3 /* CommentsView.xib in Resources */,
 				C7FA0F2E203AF9E300570271 /* profile_b@3x.png in Resources */,
 				C75A9B51203D75EE00DEF38F /* like_b_selected@2x.png in Resources */,
+				C7F138AD203F120F00058DC3 /* delete_b@3x.png in Resources */,
 				C7FA0F16203AEF5900570271 /* Montserrat-LightItalic.ttf in Resources */,
 				C7FA0F08203AEF5900570271 /* BN-Book.ttf in Resources */,
 				C75A9B50203D75EE00DEF38F /* like_b_selected@3x.png in Resources */,
@@ -720,6 +775,7 @@
 				C7FA0F17203AEF5900570271 /* Montserrat-Medium.ttf in Resources */,
 				C7572B8E2029FC4900C87CCB /* Assets.xcassets in Resources */,
 				C75A9B61203DBD4000DEF38F /* send_b@3x.png in Resources */,
+				C7F138A1203EFCA600058DC3 /* TViewController.xib in Resources */,
 				C7FA0F44203B04D000570271 /* gradient_0_i@2x.png in Resources */,
 				C7FA0F0E203AEF5900570271 /* Montserrat-Bold.ttf in Resources */,
 				C77537932033050200C92EDB /* ImageCollectionViewCell.xib in Resources */,
@@ -731,6 +787,7 @@
 				C7FA0F13203AEF5900570271 /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				C7FA0F14203AEF5900570271 /* Montserrat-Italic.ttf in Resources */,
 				C7FA0F1D203AEF5900570271 /* Montserrat-ThinItalic.ttf in Resources */,
+				C7F138A5203EFE2D00058DC3 /* back_b@2x.png in Resources */,
 				C7F13886203EDFCE00058DC3 /* MapView.xib in Resources */,
 				C7FA0F15203AEF5900570271 /* Montserrat-Light.ttf in Resources */,
 				C7FA0F07203AEF5900570271 /* BN-Bold.ttf in Resources */,
@@ -812,10 +869,15 @@
 				C7505A5820347FAF0056732F /* Test.m in Sources */,
 				C742165C203C757200A0E4AD /* TableView.m in Sources */,
 				C7421652203C673500A0E4AD /* UITextField+Custom.m in Sources */,
+				C7F1389B203EF6A600058DC3 /* TNavigationController.m in Sources */,
 				C7505A55203468F50056732F /* SessionManager.m in Sources */,
+				C786C6E12043F50600148444 /* AuthorizationViewController.m in Sources */,
 				C7505A522034644B0056732F /* NSObject+Custom.m in Sources */,
 				C7F9D6C2202DC0CA00AC6CE0 /* History.m in Sources */,
+				C7F13898203EF5C300058DC3 /* NavigationController.m in Sources */,
 				C75A9B1C203D5C3B00DEF38F /* CommentTableViewCell.m in Sources */,
+				C7F138A0203EFCA600058DC3 /* TViewController.m in Sources */,
+				C7F1388F203EF34800058DC3 /* CommentsViewController.m in Sources */,
 				C7F13884203EDDFD00058DC3 /* TCollectionView.m in Sources */,
 				C78C4EB52032E810007F986E /* ViewController.m in Sources */,
 				C7B107EA202C37DA00988A65 /* Token.m in Sources */,

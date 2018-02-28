@@ -25,17 +25,19 @@
 
 #import "PlacesManager.h"
 
+#import "CommentsViewController.h"
+
 
 #define kCollectionViewSpacing (4.f)
 
-#define kStartLatitude (0.f)
-#define kStartLongitude (0.f)
+#define kStartLatitude (32.f)
+#define kStartLongitude (32.f)
 
 #define kStartLatitudeDelta (1.f)
 #define kStartLongitudeDelta (1.f)
 
 
-@interface MapViewController () <MKMapViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout> {
+@interface MapViewController () <MKMapViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, PlaceStandaloneViewDelegate> {
     BOOL isPlacesListButtonAction;
 }
 
@@ -109,9 +111,16 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    _placesListButton.selected = YES;
     isPlacesListButtonAction = NO;
-    [_placeStandaloneView setHidden:NO animated:YES completion:nil];
+    Place *place;
+    @try {
+        place = _places[indexPath.row];
+    }
+    @finally { }
+    if (place) {
+        _placeStandaloneView.place = place;
+        [_placeStandaloneView setHidden:NO animated:YES completion:nil];
+    }
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -130,6 +139,24 @@
     }
     CGFloat value = (collectionView.frame.size.width - totalWidth) / 2.f;
     return UIEdgeInsetsMake(0.f, value, 0.f, value);
+}
+
+#pragma mark - PlaceStandaloneViewDelegate
+
+- (void)placeStandaloneView:(PlaceStandaloneView *)placeStandaloneView didSelectAction:(PlaceStandaloneViewAction)action {
+    UIViewController *viewController;
+    switch (action) {
+        case PlaceStandaloneViewActionRoute: {
+            viewController = [UIViewController new];
+        }
+            break;
+        case PlaceStandaloneViewActionComment: {
+            UIImage *image = [UIView imageWithView:_mapView];
+            viewController = [[CommentsViewController alloc] initWithImage:image comments:_placeStandaloneView.place.comments];
+        }
+            break;
+    }
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 #pragma mark - Actions
@@ -161,6 +188,7 @@
         [_places addObject:[Place new]];
     }
     isPlacesListButtonAction = YES;
+    _placeStandaloneView.delegate = self;
     TileOverlay *tileOverlay = [[TileOverlay alloc] initWithURLTemplate:kGoogleMapStyleURLTemplate];
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(kStartLatitude, kStartLongitude);
     MKCoordinateSpan span = MKCoordinateSpanMake(kStartLatitudeDelta, kStartLongitudeDelta);
